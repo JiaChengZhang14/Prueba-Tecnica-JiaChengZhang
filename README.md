@@ -119,6 +119,7 @@ src/
    - Ambos valores comparten el mismo timestamp para garantizar sincronización
 
 3. **Actualización de Gráfica (Cada Minuto)**
+   - El primer punto de la gráfica se mostrará tras el primer minuto de ejecución
    - El hook `useChartData()` recibe los datos actuales como props
    - Cuenta las actualizaciones (cada 5 segundos)
    - Cada 12 actualizaciones (= 60 segundos), agrega un punto a la gráfica

@@ -8,6 +8,15 @@ interface DataDisplayProps {
     icon: React.ReactNode;
 }
 
+/**
+    * Componente DataDisplay para mostrar un valor con su título, unidad, tiempo e ícono.
+    * @param title - El título del dato a mostrar.
+    * @param value - El valor del dato a mostrar.
+    * @param time - El tiempo asociado al dato.
+    * @param unit - La unidad de medida del dato.
+    * @param icon - El ícono a mostrar junto al dato.
+    * @returns Un componente que muestra el dato con su título, unidad, tiempo e ícono.
+    */
 export function DataDisplay({ title, value, time, unit, icon }: DataDisplayProps) {
     return (
         <div className="flex flex-1 flex-row justify-between items-start p-6 rounded-xl shadow-md bg-white/90 backdrop-blur-sm border-blue-200 max-w-2xl max-md:w-full">

@@ -8,6 +8,10 @@ interface DataPoint {
     energyKWh: number;
 }
 
+/**
+ * Hook para obtener los datos de temperatura y energía.
+ * @return Un objeto con los datos actuales de temperatura y energía.
+ */
 export function useData() {
     const [values, setValues] = useState<DataPoint[]>([]);
     const [index, setIndex] = useState(0);

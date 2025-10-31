@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 :root {
+  /* De azul claro a verde menta */
   --background: linear-gradient(to bottom, #c0e8fd, #72dfb7);
   --foreground: #171717;
 }

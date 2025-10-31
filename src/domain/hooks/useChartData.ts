@@ -12,6 +12,13 @@ interface UseChartDataProps {
     energy: number | null;
 }
 
+/**
+ * Hook para obtener los datos del gráfico histórico de temperatura y energía.
+ * @param time - El tiempo actual.
+ * @param temperature - La temperatura actual.
+ * @param energy - La energía actual.
+ * @returns Un objeto con los datos del gráfico y el estado de carga.
+ */
 export function useChartData({ time, temperature, energy }: UseChartDataProps) {
     const [chartData, setChartData] = useState<ChartDataPoint[]>([]);
     const updateCounterRef = useRef(0); // Contador de actualizaciones
